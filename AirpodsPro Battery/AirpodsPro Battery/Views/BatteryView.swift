@@ -30,7 +30,7 @@ class BatteryView: NSView {
         
         leftBatteryValue.stringValue = "\(viewModel.leftBatteryValue) %"
         rightBatteryValue.stringValue = "\(viewModel.rightBatteryValue) %"
-        caseBatteryValue.stringValue = "20 %"
+        caseBatteryValue.stringValue = "\(viewModel.caseBatteryValue) %"
         
         leftBatteryStack.isHidden = viewModel.connectionStatus == .connected ? false : true
         rightBatteryStack.isHidden = viewModel.connectionStatus == .connected ? false : true
@@ -39,7 +39,7 @@ class BatteryView: NSView {
     
         leftBatteryImage.image = getBatteryImage(value: viewModel.leftBatteryValue)
         rightBatteryImage.image = getBatteryImage(value: viewModel.rightBatteryValue)
-        caseBatteryImage.image = NSImage(imageLiteralResourceName: "battery/25")
+        caseBatteryImage.image = getBatteryImage(value: viewModel.caseBatteryValue)
     }
     
     private func getBatteryImage(value: Int) -> NSImage? {

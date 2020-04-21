@@ -30,7 +30,12 @@ class BatteryView: NSView {
         
         leftBatteryValue.stringValue = "\(viewModel.leftBatteryValue) %"
         rightBatteryValue.stringValue = "\(viewModel.rightBatteryValue) %"
-        caseBatteryValue.stringValue = "\(viewModel.caseBatteryValue) %"
+        
+        if viewModel.caseBatteryValue == 0 {
+            caseBatteryValue.stringValue = "Place AirPods\ninside the case"
+        } else {
+            caseBatteryValue.stringValue = "\(viewModel.caseBatteryValue) %"
+        }
         
         leftBatteryStack.isHidden = viewModel.connectionStatus == .connected ? false : true
         rightBatteryStack.isHidden = viewModel.connectionStatus == .connected ? false : true

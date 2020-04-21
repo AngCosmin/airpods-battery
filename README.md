@@ -14,7 +14,7 @@ AirPods Connected             |  AirPods Not Connected
 <img src="images/demo.gif" width=50%>
 
 ## How to install
-1. Download the lastest version from [here](https://github.com/AngCosmin/airpods-battery/releases/download/1.0.1/AirPodsBattery.zip) or from the [Releases tab](https://github.com/AngCosmin/airpods-battery/releases)
+1. Download the lastest version from [here](https://github.com/AngCosmin/airpods-battery/releases/download/1.0.2/AirPodsBattery.zip) or from the [Releases tab](https://github.com/AngCosmin/airpods-battery/releases)
 2. Extract it
 3. Move the extracted file to *Applications* folder
 4. Run it

@@ -44,7 +44,7 @@ class BatteryView: NSView {
     
     private func getBatteryImage(value: Int) -> NSImage? {
         switch value {
-        case 0...29: return NSImage(imageLiteralResourceName: "battery/25")
+        case 1...29: return NSImage(imageLiteralResourceName: "battery/25")
         case 30...59: return NSImage(imageLiteralResourceName: "battery/50")
         case 60...79: return NSImage(imageLiteralResourceName: "battery/75")
         case 80...100: return NSImage(imageLiteralResourceName: "battery/100")
